@@ -1,3 +1,4 @@
+dist: ubuntu 20
 language: node_js
 node_js:
   - 18
