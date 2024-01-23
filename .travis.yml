@@ -1,4 +1,4 @@
-dist: ubuntu 20
+dist: bionic
 language: node_js
 node_js:
   - 18
