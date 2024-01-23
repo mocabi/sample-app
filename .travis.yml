@@ -7,3 +7,14 @@ before_install:
 
 install:
   - npm ci
+
+script:
+  - echo "MAIN SCRIPT"
+
+jobs:
+  allow_failures:
+  include:
+    - stage: echo "FIRST STAGE IN BUILD (stage 1)"
+      script: echo "FIRST SCRIPT IN STAGE 1"
+    - stage: echo "SECOND STAGE IN BUILD (stage 2)"
+      script: echo "FIRST SCRIPT IN STAGE 2"
