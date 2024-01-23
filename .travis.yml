@@ -1,4 +1,9 @@
 dist: focal
 language: node_js
 node_js: stable
-  
+
+before_install:
+  - echo "BEFORE-INSTALL"
+
+install:
+  - npm ci
