@@ -18,3 +18,4 @@ jobs:
       script: echo "FIRST SCRIPT IN STAGE 1"
     - stage: echo "SECOND STAGE IN BUILD (stage 2)"
       script: echo "FIRST SCRIPT IN STAGE 2"
+    - script: echo "FINAL SCRIPT"
